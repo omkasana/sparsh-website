@@ -96,10 +96,10 @@ export default function ContactPage() {
                   Phone
                 </h3>
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+917800167300"
                   className="text-lg text-gray-900 hover:text-rose-600 transition"
                 >
-                  +91 99999 99999
+                  +91 7800167300
                 </a>
               </motion.div>
 
@@ -113,10 +113,10 @@ export default function ContactPage() {
                   Email
                 </h3>
                 <a
-                  href="mailto:info@sparshpolymer.com"
+                  href="mailto:SS903084@gmail.com"
                   className="text-lg text-gray-900 hover:text-rose-600 transition"
                 >
-                  info@sparshpolymer.com
+                  SS903084@gmail.com
                 </a>
               </motion.div>
 
@@ -130,9 +130,9 @@ export default function ContactPage() {
                   Location
                 </h3>
                 <p className="text-lg text-gray-900">
-                  Mangolpuri Industrial Area,
+                  B-339, Phase 1, Mangolpuri Industrial Area,
                   <br />
-                  New Delhi, India
+                  Delhi - 110083, India
                 </p>
               </motion.div>
 
@@ -346,7 +346,7 @@ export default function ContactPage() {
       <section className="py-0 bg-gray-50">
         <div className="h-[500px] bg-gray-200">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.1234567890123!2d77.0678!3d28.7041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQyJzE0LjgiTiA3N8KwMDQnMDQuMSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.8830970384406!2d77.09678804974035!3d28.69637856450347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d055536e50c83%3A0xb0ed8b29259ec909!2sSparsh%20polymer!5e0!3m2!1sen!2sin!4v1769685923400!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}

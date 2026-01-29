@@ -2,11 +2,35 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [showTopBar, setShowTopBar] = useState(true);
+
+  // Hide top bar on scroll
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Hide top bar after scrolling down 100px
+      if (currentScrollY > 100) {
+        setShowTopBar(false);
+      } else {
+        setShowTopBar(true);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -20,18 +44,19 @@ export default function Header() {
     };
   }, [isMenuOpen]);
 
-  const products = [
-    { name: "EVA Soles", href: "/categories/eva-soles" },
-    { name: "PU Soles", href: "/categories/pu-soles" },
-    { name: "TPR Soles", href: "/categories/tpr-soles" },
-    { name: "Rubber Soles", href: "/categories/rubber-soles" },
-  ];
-
   return (
     <>
       <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
-        {/* Top Bar - Slimmer */}
-        <div className="bg-gradient-to-r from-rose-600 to-orange-600 text-white">
+        {/* Top Bar - Slimmer - Animated */}
+        <motion.div
+          initial={{ height: "auto", opacity: 1 }}
+          animate={{
+            height: showTopBar ? "auto" : 0,
+            opacity: showTopBar ? 1 : 0,
+          }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="bg-gradient-to-r from-rose-600 to-orange-600 text-white overflow-hidden"
+        >
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center text-xs py-1.5">
               <div className="hidden md:flex items-center gap-4">
@@ -55,7 +80,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Main Navigation - Slimmer */}
         <div className="container mx-auto px-4">
@@ -78,47 +103,12 @@ export default function Header() {
                 Home
               </Link>
 
-              {/* Products Dropdown */}
-              <div
-                className="relative group"
-                onMouseEnter={() => setIsProductsOpen(true)}
-                onMouseLeave={() => setIsProductsOpen(false)}
+              <Link
+                href="/products"
+                className="text-gray-700 hover:text-rose-600 font-medium transition cursor-pointer text-sm"
               >
-                <button className="flex items-center gap-1 text-gray-700 hover:text-rose-600 font-medium transition cursor-pointer text-sm">
-                  Products
-                  <ChevronDown className="w-3.5 h-3.5" />
-                </button>
-
-                <AnimatePresence>
-                  {isProductsOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-1"
-                    >
-                      {products.map((product, index) => (
-                        <Link
-                          key={index}
-                          href={product.href}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 transition cursor-pointer"
-                        >
-                          {product.name}
-                        </Link>
-                      ))}
-                      <div className="border-t border-gray-100 mt-1 pt-1">
-                        <Link
-                          href="/categories"
-                          className="block px-4 py-2 text-sm text-rose-600 font-semibold hover:bg-rose-50 transition cursor-pointer"
-                        >
-                          View All →
-                        </Link>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                Products
+              </Link>
 
               <Link
                 href="/about"
@@ -126,6 +116,7 @@ export default function Header() {
               >
                 About Us
               </Link>
+
               <Link
                 href="/contact"
                 className="text-gray-700 hover:text-rose-600 font-medium transition cursor-pointer text-sm"
@@ -209,28 +200,13 @@ export default function Header() {
                   Home
                 </Link>
 
-                <div className="border-b border-gray-50">
-                  <div className="text-gray-700 font-medium py-3">Products</div>
-                  <div className="pl-4 pb-2 space-y-1">
-                    {products.map((product, index) => (
-                      <Link
-                        key={index}
-                        href={product.href}
-                        onClick={() => setIsMenuOpen(false)}
-                        className="block text-gray-600 hover:text-rose-600 py-2 text-sm cursor-pointer"
-                      >
-                        {product.name}
-                      </Link>
-                    ))}
-                    <Link
-                      href="/categories"
-                      onClick={() => setIsMenuOpen(false)}
-                      className="block text-rose-600 font-semibold py-2 text-sm cursor-pointer"
-                    >
-                      View All Products →
-                    </Link>
-                  </div>
-                </div>
+                <Link
+                  href="/products"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block text-gray-700 hover:text-rose-600 font-medium py-3 cursor-pointer border-b border-gray-50"
+                >
+                  Products
+                </Link>
 
                 <Link
                   href="/about"
@@ -264,18 +240,18 @@ export default function Header() {
                 {/* Contact Info */}
                 <div className="pt-8 space-y-3 text-sm text-gray-600">
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+917800167300"
                     className="flex items-center gap-2 hover:text-rose-600 transition"
                   >
                     <Phone className="w-4 h-4" />
-                    <span>+91 99999 99999</span>
+                    <span>+91 7800167300</span>
                   </a>
                   <a
-                    href="mailto:info@sparshpolymer.com"
+                    href="mailto:SS903084@gmail.com"
                     className="flex items-center gap-2 hover:text-rose-600 transition"
                   >
                     <Mail className="w-4 h-4" />
-                    <span>info@sparshpolymer.com</span>
+                    <span>SS903084@gmail.com</span>
                   </a>
                 </div>
               </div>
