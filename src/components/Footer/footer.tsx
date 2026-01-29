@@ -9,21 +9,13 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  ArrowRight,
 } from "lucide-react";
 
 export default function Footer() {
-  const products = [
-    { name: "EVA Soles", href: "/categories/eva-soles" },
-    { name: "PU Soles", href: "/categories/pu-soles" },
-    { name: "TPR Soles", href: "/categories/tpr-soles" },
-    { name: "Rubber Soles", href: "/categories/rubber-soles" },
-  ];
-
   const quickLinks = [
     { name: "Home", href: "/" },
+    { name: "Products", href: "/products" },
     { name: "About Us", href: "/about" },
-    { name: "All Products", href: "/categories" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -31,17 +23,17 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Company Info - Full width on mobile */}
-          <div className="col-span-2 md:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          {/* Company Info */}
+          <div>
             <div className="text-3xl font-bold mb-4">
               <span className="bg-gradient-to-r from-rose-400 to-orange-400 bg-clip-text text-transparent">
                 Sparsh Polymer
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Manufacturing premium shoe soles since 2009. Your trusted partner
-              for quality EVA, PU, TPR, and Rubber soles.
+              Manufacturing premium EVA shoe soles since 2009. Your trusted
+              partner for quality and innovation.
             </p>
 
             {/* Social Links */}
@@ -70,7 +62,7 @@ export default function Footer() {
             <h3 className="text-lg lg:text-xl font-bold mb-4 lg:mb-6">
               Quick Links
             </h3>
-            <ul className="space-y-2 lg:space-y-3">
+            <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link
@@ -84,55 +76,38 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Products */}
-          <div>
-            <h3 className="text-lg lg:text-xl font-bold mb-4 lg:mb-6">
-              Products
-            </h3>
-            <ul className="space-y-2 lg:space-y-3">
-              {products.map((product, index) => (
-                <li key={index}>
-                  <Link
-                    href={product.href}
-                    className="text-gray-400 hover:text-rose-400 transition text-sm lg:text-base cursor-pointer inline-block"
-                  >
-                    {product.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact Info */}
-          <div className="col-span-2 md:col-span-1">
+          <div>
             <h3 className="text-lg lg:text-xl font-bold mb-4 lg:mb-6">
               Contact Us
             </h3>
-            <ul className="space-y-3 lg:space-y-4">
+            <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400 text-sm lg:text-base">
                 <MapPin className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                 <span>
+                  B-339, Phase 1,
+                  <br />
                   Mangolpuri Industrial Area,
                   <br />
-                  New Delhi, India
+                  Delhi - 110083, India
                 </span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm lg:text-base">
                 <Phone className="w-5 h-5 text-rose-400 flex-shrink-0" />
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+917800167300"
                   className="hover:text-rose-400 transition"
                 >
-                  +91 99999 99999
+                  +91 78001 67300
                 </a>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm lg:text-base">
                 <Mail className="w-5 h-5 text-rose-400 flex-shrink-0" />
                 <a
-                  href="mailto:info@sparshpolymer.com"
+                  href="mailto:SS903084@gmail.com"
                   className="hover:text-rose-400 transition break-all"
                 >
-                  info@sparshpolymer.com
+                  SS903084@gmail.com
                 </a>
               </li>
             </ul>
