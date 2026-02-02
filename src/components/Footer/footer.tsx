@@ -1,15 +1,8 @@
 "use client";
 import Link from "next/link";
 import { motion } from "motion/react";
-import {
-  Phone,
-  Mail,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const quickLinks = [
@@ -36,24 +29,42 @@ export default function Footer() {
               partner for quality and innovation.
             </p>
 
-            {/* Social Links */}
+            {/* Contact Action Buttons */}
             <div className="flex gap-3">
-              {[
-                { icon: Facebook, href: "#" },
-                { icon: Instagram, href: "#" },
-                { icon: Twitter, href: "#" },
-                { icon: Linkedin, href: "#" },
-              ].map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.href}
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer"
-                >
-                  <social.icon className="w-5 h-5" />
-                </motion.a>
-              ))}
+              {/* WhatsApp */}
+              <motion.a
+                href="https://wa.me/917800167300"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition cursor-pointer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp className="w-5 h-5" />
+              </motion.a>
+
+              {/* Email */}
+              <motion.a
+                href="mailto:SS903084@gmail.com"
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer"
+                aria-label="Email"
+              >
+                <Mail className="w-5 h-5" />
+              </motion.a>
+
+              {/* Phone */}
+              <motion.a
+                href="tel:+917800167300"
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer"
+                aria-label="Phone"
+              >
+                <Phone className="w-5 h-5" />
+              </motion.a>
             </div>
           </div>
 
@@ -124,13 +135,13 @@ export default function Footer() {
             </p>
             <div className="flex gap-4 md:gap-6">
               <Link
-                href="/privacy"
+                href="/privacy-policy"
                 className="hover:text-rose-400 transition cursor-pointer"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                href="/terms-conditions"
                 className="hover:text-rose-400 transition cursor-pointer"
               >
                 Terms & Conditions
