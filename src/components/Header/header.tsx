@@ -61,18 +61,18 @@ export default function Header() {
             <div className="flex justify-between items-center text-xs py-1.5">
               <div className="hidden md:flex items-center gap-4">
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+917800167300"
                   className="flex items-center gap-1.5 hover:opacity-80 transition"
                 >
                   <Phone className="w-3 h-3" />
-                  <span>+91 99999 99999</span>
+                  <span>+91 7800167300</span>
                 </a>
                 <a
-                  href="mailto:info@sparshpolymer.com"
+                  href="mailto:SS903084@gmail.com"
                   className="flex items-center gap-1.5 hover:opacity-80 transition"
                 >
                   <Mail className="w-3 h-3" />
-                  <span>info@sparshpolymer.com</span>
+                  <span>SS903084@gmail.com</span>
                 </a>
               </div>
               <div className="ml-auto text-[11px]">
