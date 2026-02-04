@@ -22,8 +22,8 @@ export const products: Product[] = [
   {
     id: 'sp-02',
     name: 'SP-02',
-    image: '/images/sp-02.jpeg',
-    images: ['/images/sp-02.jpeg'],
+    image: '/images/sp-02.jpg',
+    images: ['/images/sp-02.jpg'],
     description: 'Premium EVA shoe sole with superior cushioning and shock absorption. Designed for high-performance footwear.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -45,8 +45,8 @@ export const products: Product[] = [
   {
     id: 'sp-15',
     name: 'SP-15',
-    image: '/images/sp-15.jpeg',
-    images: ['/images/sp-15.jpeg'],
+    image: '/images/sp-15.jpg',
+    images: ['/images/sp-15.jpg'],
     description: 'Comfortable EVA sole designed for everyday casual footwear. Perfect balance of comfort and durability.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -68,8 +68,8 @@ export const products: Product[] = [
   {
     id: 'sp-25',
     name: 'SP-25',
-    image: '/images/sp-25.jpeg',
-    images: ['/images/sp-25.jpeg'],
+    image: '/images/sp-25.jpg',
+    images: ['/images/sp-25.jpg'],
     description: 'High-performance EVA sole for professional footwear with maximum shock absorption and energy return.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -91,8 +91,8 @@ export const products: Product[] = [
   {
     id: 'sp-45',
     name: 'SP-45',
-    image: '/images/sp-45.jpeg',
-    images: ['/images/sp-45.jpeg'],
+    image: '/images/sp-45.jpg',
+    images: ['/images/sp-45.jpg'],
     description: 'Rugged EVA sole designed for outdoor and trail footwear with enhanced grip and durability.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -114,8 +114,8 @@ export const products: Product[] = [
   {
     id: 'sp-52',
     name: 'SP-52',
-    image: '/images/sp-52.jpeg',
-    images: ['/images/sp-52.jpeg'],
+    image: '/images/sp-52.jpg',
+    images: ['/images/sp-52.jpg'],
     description: 'Lightweight and comfortable EVA sole specially designed for premium footwear.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -137,8 +137,8 @@ export const products: Product[] = [
   {
     id: 'sp-6-10',
     name: 'SP-6-10',
-    image: '/images/sp-6-10.jpeg',
-    images: ['/images/sp-6-10.jpeg'],
+    image: '/images/sp-6-10.jpg',
+    images: ['/images/sp-6-10.jpg'],
     description: 'Comfortable EVA sole perfect for slippers and sandals with excellent cushioning.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -160,8 +160,8 @@ export const products: Product[] = [
   {
     id: 'sp-101',
     name: 'SP-101',
-    image: '/images/sp-101.jpeg',
-    images: ['/images/sp-101.jpeg'],
+    image: '/images/sp-101.jpg',
+    images: ['/images/sp-101.jpg'],
     description: 'Sleek EVA sole designed for formal and semi-formal footwear with professional appearance.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -183,8 +183,8 @@ export const products: Product[] = [
   {
     id: 'sp-103',
     name: 'SP-103',
-    image: '/images/sp-103.jpeg',
-    images: ['/images/sp-103.jpeg'],
+    image: '/images/sp-103.jpg',
+    images: ['/images/sp-103.jpg'],
     description: 'Elegant EVA sole designed for versatile footwear with comfortable support.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -206,8 +206,8 @@ export const products: Product[] = [
   {
     id: 'sp-105',
     name: 'SP-105',
-    image: '/images/sp-105.jpeg',
-    images: ['/images/sp-105.jpeg'],
+    image: '/images/sp-105.jpg',
+    images: ['/images/sp-105.jpg'],
     description: 'Premium EVA sole with advanced cushioning technology for superior comfort.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -229,8 +229,8 @@ export const products: Product[] = [
   {
     id: 'sp-106',
     name: 'SP-106',
-    image: '/images/sp-106.jpeg',
-    images: ['/images/sp-106.jpeg'],
+    image: '/images/sp-106.jpg',
+    images: ['/images/sp-106.jpg'],
     description: 'Versatile EVA sole suitable for various footwear applications with excellent durability.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -252,8 +252,8 @@ export const products: Product[] = [
   {
     id: 'sp-107',
     name: 'SP-107',
-    image: '/images/sp-107.jpeg',
-    images: ['/images/sp-107.jpeg'],
+    image: '/images/sp-107.jpg',
+    images: ['/images/sp-107.jpg'],
     description: 'High-quality EVA sole with enhanced grip pattern for superior traction.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -275,8 +275,8 @@ export const products: Product[] = [
   {
     id: 'sp-108',
     name: 'SP-108',
-    image: '/images/sp-108.jpeg',
-    images: ['/images/sp-108.jpeg'],
+    image: '/images/sp-108.jpg',
+    images: ['/images/sp-108.jpg'],
     description: 'Modern EVA sole design combining style and comfort for contemporary footwear.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -298,8 +298,8 @@ export const products: Product[] = [
   {
     id: 'sp-109',
     name: 'SP-109',
-    image: '/images/sp-109.jpeg',
-    images: ['/images/sp-109.jpeg'],
+    image: '/images/sp-109.jpg',
+    images: ['/images/sp-109.jpg'],
     description: 'Professional-grade EVA sole with optimal balance of comfort and performance.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -321,8 +321,8 @@ export const products: Product[] = [
   {
     id: 'sp-110',
     name: 'SP-110',
-    image: '/images/sp-110.jpeg',
-    images: ['/images/sp-110.jpeg'],
+    image: '/images/sp-110.jpg',
+    images: ['/images/sp-110.jpg'],
     description: 'Innovative EVA sole featuring advanced design for maximum comfort and support.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -344,8 +344,8 @@ export const products: Product[] = [
   {
     id: 'sp-112',
     name: 'SP-112',
-    image: '/images/sp-112.jpeg',
-    images: ['/images/sp-112.jpeg'],
+    image: '/images/sp-112.jpg',
+    images: ['/images/sp-112.jpg'],
     description: 'Premium quality EVA sole with superior craftsmanship for high-end footwear.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -367,8 +367,8 @@ export const products: Product[] = [
   {
     id: 'sld-1',
     name: 'SLD-1',
-    image: '/images/sld-1.jpeg',
-    images: ['/images/sld-1.jpeg'],
+    image: '/images/sld-1.jpg',
+    images: ['/images/sld-1.jpg'],
     description: 'Specialized EVA sole designed for slipper and sandal applications with comfort focus.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
@@ -390,8 +390,8 @@ export const products: Product[] = [
   {
     id: 'sld-2',
     name: 'SLD-2',
-    image: '/images/sld-2.jpeg',
-    images: ['/images/sld-2.jpeg'],
+    image: '/images/sld-2.jpg',
+    images: ['/images/sld-2.jpg'],
     description: 'Comfortable EVA slipper sole with enhanced durability for everyday use.',
     material: 'EVA (Ethylene-Vinyl Acetate)',
     features: [
