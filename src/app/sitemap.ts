@@ -12,14 +12,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/products`,
       lastModified: new Date(),
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,

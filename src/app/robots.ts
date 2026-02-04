@@ -16,23 +16,23 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
-        userAgent: "GPTBot", // ChatGPT
+        userAgent: "GPTBot", 
         allow: "/",
       },
       {
-        userAgent: "ChatGPT-User", // ChatGPT Search
+        userAgent: "ChatGPT-User", 
         allow: "/",
       },
       {
-        userAgent: "ClaudeBot", // Anthropic Claude
+        userAgent: "ClaudeBot",
         allow: "/",
       },
       {
-        userAgent: "PerplexityBot", // Perplexity AI
+        userAgent: "PerplexityBot",
         allow: "/",
       },
       {
-        userAgent: "Google-Extended", // Google Gemini/Bard
+        userAgent: "Google-Extended",
         allow: "/",
       },
       {
