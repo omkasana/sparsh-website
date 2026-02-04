@@ -62,17 +62,17 @@ export default function HomePage() {
   const heroSlides = [
     {
       id: 1,
-      image: "/images/sp-101.jpeg",
+      image: "/images/sp-101.jpg",
       alt: "Easy to Wear",
     },
     {
       id: 2,
-      image: "/images/sp-103.jpeg",
+      image: "/images/sp-103.jpg",
       alt: "Soft & Cushioned",
     },
     {
       id: 3,
-      image: "/images/sp-105.jpeg",
+      image: "/images/sp-105.jpg",
       alt: "Lightweight",
     },
   ];
